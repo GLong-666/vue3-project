@@ -1,0 +1,91 @@
+:root {
+    --primary_color: #0F9AE2;
+    --disabled_color: #bbbbbb;
+}
+
+html {
+    color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    height: 100vh;
+
+    .flex_start {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .flex_end {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .flex_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex_between {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .flex_around {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .flex_column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex_start > * + * {
+        margin-left: 10px;
+    }
+
+    .flex_end > * + * {
+        margin-left: 10px;
+    }
+
+    // 颜色类
+    .primary_color {
+        color: var(--primary_color) !important;
+    }
+
+    .disabled_color {
+        color: var(--disabled_color) !important;
+    }
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
